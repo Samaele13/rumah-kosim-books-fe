@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Rumah Kosim Books</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-secondary">
+  <div class="container border mb-4 mt-4 rounded-3 shadow bg-white px-3 px-md-4">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h1>Rumah Kosim Books</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#collection" class="nav-link">Produk Kami</a></li>
+            <li class="nav-item"><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+            <li class="nav-item"><a href="#order" class="nav-link">Cara Order</a></li>
+            <li class="nav-item">
+              <a href="cart.html" class="nav-link shopping-cart">
+                <i class="bi bi-cart"></i> Shopping Cart <span id="cartCount">(0)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="bi bi-box-arrow-right"></i> Login
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Banner Image -->
+    <div class="px-4 mb-4">
+      <img src="images/banner.png" class="w-100 rounded-3" alt="Banner Image for Rumah Kosim Books" loading="lazy" />
+    </div>
+
+    <hr>
+
+    <!-- Carousel Section -->
+    <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+      <h1 class="text-center mb-4 mt-4 rounded-3">Merchant Partner</h1>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/merchant1.jpg" class="d-block mx-auto carousel-image" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/merchant2.jpg" class="d-block mx-auto carousel-image" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/merchant3.jpg" class="d-block mx-auto carousel-image" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/merchant4.jpg" class="d-block mx-auto carousel-image" />
+        </div>
+        <div class="carousel-item">
+          <img src="images/merchant5.jpg" class="d-block mx-auto carousel-image" />
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <br>
+    <hr>
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="loginModalLabel">Login to Your Account</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Login Form -->
+            <div class="form-container" id="loginForm">
+              <form id="loginFormElement">
+                <div class="mb-3">
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" placeholder="Enter your username" required />
+                </div>
+                <div class="mb-3">
+                  <label for="password" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Enter your password"
+                    required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Login</button>
+              </form>
+              <p class="text-center mt-3">Don't have an account? <span class="text-primary toggle-link"
+                  id="showRegister">Register here</span></p>
+            </div>
+
+            <!-- Register Form -->
+            <div class="form-container d-none" id="registerForm">
+              <form id="registerFormElement">
+                <div class="mb-3">
+                  <label for="registerUsername" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="registerUsername" placeholder="Enter your username"
+                    required />
+                </div>
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="registerEmail" placeholder="Enter your email" required />
+                </div>
+                <div class="mb-3">
+                  <label for="registerPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="registerPassword" placeholder="Enter your password"
+                    required />
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Register</button>
+              </form>
+              <p class="text-center mt-3">Already have an account? <span class="text-primary toggle-link"
+                  id="showLogin">Login here</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Our Collection Section -->
+    <h2 class="text-center" id="collection">Our Collection</h2>
+    <p class="text-center">These are the best products that we have!</p>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 gx-5 gy-5 p-5" id="product-list">
+      <!-- Product items will be inserted here -->
+    </div>
+
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <!-- Content will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Cara Order -->
+    <div id="order" class="px-4 py-4 bg-secondary text-center order-expand-sm">
+      <div class="mx-auto w-75">
+        <h3 class="text-white">Cara Order</h3>
+        <p class="text-center text-dark">
+          <hr>
+          <img src="images/order.png" align="right" style="width: 100px; height: auto" class="ms-3 mb-3" loading="lazy"
+            alt="Order Process Icon" />
+        <ul class="mx-auto w-75 list-unstyled">
+          <li>Login/Register terlebih dahulu!</li>
+          <li>Pilih buku favoritmu!</li>
+          <li>Masukan buku yang kamu pilih ke dalam keranjang.</li>
+          <li>Lanjutkan pembayaran.</li>
+          <li>Pilih metode pembayaran!</li>
+          <li>Selesai! Tunggu buku yang kamu pilih datang ke rumahmu!</li>
+        </ul>
+        </p>
+      </div>
+    </div>
+
+    <!-- Tentang Kami -->
+    <div id="tentang" class="px-4 py-4 bg-secondary text-center">
+      <div class="mx-auto w-75">
+        <h3 class="text-white">Tentang Kami</h3>
+        <p class="text-center text-dark">
+          <hr>
+          <img src="images/about-us.png" style="width: 100px; height: auto" class="me-3 mb-3" loading="lazy"
+            alt="About Us Icon" />
+          Rumah Kosim Books is the store-books based on Indonesian, Founder: Kosim Family.
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content text-center">
+        <h5>&copy; 2024 Rumah Kosim Books. All Rights Reserved.</h5>
+      </div>
+    </footer>
+  </div>
+  </div>
+
+  <!-- Bootstrap JS (from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>

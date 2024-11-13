@@ -1,0 +1,181 @@
+html {
+  scroll-behavior: smooth;
+}
+
+nav .nav-link {
+  color: #090303;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  background-color: aliceblue;
+}
+
+.www {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.www:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-image {
+  max-width: 75%;
+  height: auto;
+  max-height: 300px;
+  transition: transform 0.3s ease;
+}
+
+.carousel-item.active .carousel-image:hover {
+  transform: scale(1.05);
+}
+
+.shopping-cart {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffcc00;
+  color: #000;
+  padding: 8px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.shopping-cart i {
+  margin-right: 8px; /* Adjust the spacing as needed */
+}
+
+.shopping-cart:hover {
+  background-color: #ff9900;
+  transform: scale(1.05);
+  text-decoration: none;
+  color: #000;
+}
+
+#cartCount {
+  background-color: #000;
+  color: #ffcc00;
+  font-size: 14px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.btn-login {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-left: 10px;
+  color: #090303;
+  transition: color 0.3s ease, background-color 0.3s ease;
+  background-color: transparent;
+  border: 2px solid transparent;
+}
+
+.btn-login:hover {
+  color: black;
+  background-color: #ffcc00;
+  border: 2px solid #ffcc00;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.product-card {
+  animation: jiggle 0.5s ease-in-out infinite;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card.clicked {
+  animation: click-animation 0.5s ease forwards;
+}
+
+.add-to-cart {
+  background-color: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  outline: none;
+}
+
+.add-to-cart:hover {
+  background-color: #dd8500;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  background-color: #e9ecef;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.modal-content {
+  border-radius: 10px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 800;
+}
+
+.input {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s;
+}
+
+.input:focus {
+  border-color: teal;
+  box-shadow: 0 0 5px rgba(0, 128, 128, 0.5);
+}
+
+.form-btn {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 0 !important;
+  background: teal;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-btn:hover {
+  background-color: #006666;
+  transform: scale(1.05);
+}
+
+.toggle-link {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.container {
+  animation: fadeIn 0.5s ease-in-out;
+}
