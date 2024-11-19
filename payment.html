@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Method</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles-payment.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 class="text-center mt-4">Choose Payment Method</h2>
+      <hr />
+      <div class="d-flex justify-content-center flex-wrap gap-3">
+        <div class="payment-bubble" onclick="changePaymentMethod('bca')">
+          <img src="images/merchant1.jpg" alt="BCA" />
+        </div>
+        <div class="payment-bubble" onclick="changePaymentMethod('qris')">
+          <img src="images/merchant2.jpg" alt="QRIS" />
+        </div>
+        <div class="payment-bubble" onclick="changePaymentMethod('dana')">
+          <img src="images/merchant3.jpg" alt="DANA" />
+        </div>
+        <div class="payment-bubble" onclick="changePaymentMethod('gopay')">
+          <img src="images/merchant4.jpg" alt="Gopay" />
+        </div>
+        <div class="payment-bubble" onclick="changePaymentMethod('kreditnow')">
+          <img src="images/merchant5.jpg" alt="KreditNow" />
+        </div>
+      </div>
+
+      <div id="payment-form" class="form-container mt-4">
+        <!-- Form payment method akan dimasukkan di sini -->
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main-payment.js"></script>
+  </body>
+</html>

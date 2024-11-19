@@ -1,0 +1,50 @@
+.payment-bubble {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.payment-bubble:hover {
+  border-color: #007bff;
+  transform: scale(1.1);
+}
+
+.payment-bubble img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: auto;
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+  box-shadow: 0 1.4px 3.6px rgba(0, 0, 0, 0.968);
+}
+
+.btn-checkout {
+  width: 100%;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-checkout:hover {
+  background-color: #e68a00;
+}
